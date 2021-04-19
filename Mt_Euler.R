@@ -4,8 +4,8 @@
 x<-seq(1,3,0.4)
 #Ordinary Differential Equation
 F<-function(x,y) (1+(y/x)+(y/x)^2)
-y=0
 #Euler's Approximations
+y=0
 aprox.<-seq(0,0,0)
 for(i in 1:5) {y=y+0.4*F(x[i],y); aprox.[i+1]<-y} 
 #Exact Solution
